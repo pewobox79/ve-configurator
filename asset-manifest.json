@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ve-configurator/static/css/main.a6f6afd0.chunk.css",
+    "main.js": "/ve-configurator/static/js/main.1a80ce3a.chunk.js",
+    "main.js.map": "/ve-configurator/static/js/main.1a80ce3a.chunk.js.map",
+    "runtime-main.js": "/ve-configurator/static/js/runtime-main.90844d0a.js",
+    "runtime-main.js.map": "/ve-configurator/static/js/runtime-main.90844d0a.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/ve-configurator/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.f91cd8c0.chunk.js": "/ve-configurator/static/js/2.f91cd8c0.chunk.js",
+    "static/js/2.f91cd8c0.chunk.js.map": "/ve-configurator/static/js/2.f91cd8c0.chunk.js.map",
+    "static/js/3.f6d26904.chunk.js": "/ve-configurator/static/js/3.f6d26904.chunk.js",
+    "static/js/3.f6d26904.chunk.js.map": "/ve-configurator/static/js/3.f6d26904.chunk.js.map",
+    "index.html": "/ve-configurator/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/ve-configurator/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.a6f6afd0.chunk.css.map": "/ve-configurator/static/css/main.a6f6afd0.chunk.css.map",
+    "static/js/2.f91cd8c0.chunk.js.LICENSE.txt": "/ve-configurator/static/js/2.f91cd8c0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/ve-configurator/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90844d0a.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.f91cd8c0.chunk.js",
+    "static/css/main.a6f6afd0.chunk.css",
+    "static/js/main.1a80ce3a.chunk.js"
+  ]
+}
