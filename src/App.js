@@ -14,12 +14,12 @@ function App() {
     }
 
 
-    const [priceTotal, setPriceTotal] = useState()
+    const [priceTotal, setPriceTotal] = useState(0)
 
     const handleModulOne = (e) => {
         e.preventDefault()
         document.getElementById("module1").className = ""
-        setPriceTotal(pricelist.moduleOne)
+        setPriceTotal(priceTotal + pricelist.moduleOne)
         console.log(priceTotal)
     }
     const handleModulTwo = (e) => {
@@ -50,7 +50,7 @@ function App() {
     }
 
 
-    const handleClear=()=>{
+    const handleClear = () => {
         handleDeleteOne()
         handleDeleteTwo()
         handleDeleteThree()
@@ -60,10 +60,10 @@ function App() {
     return (
         <><Jumbotron fluid>
             <Container>
-                <h1>Virtual Event Configurator</h1>
+                <h1>AVIAREPS - Virtual Event Configurator</h1>
                 <p>
                     We customize your next <span className="font-weight-bold font-italic">Virtual Event</span>. <br/>Choose
-                    the available eventv modules below and we can make your event
+                    the available event modules below and we can make your event
                     unique!
                 </p>
             </Container>
@@ -71,15 +71,18 @@ function App() {
             <div className="wrapper">
 
 
-                <Container className="pb-5">
-                    <Button variant="outline-primary" className="m-2" onClick={handleModulOne}>Modul 1</Button>
-                    <Button variant="outline-primary" className="m-2" onClick={handleModulTwo}>Modul 2</Button>
-                    <Button variant="outline-primary" className="m-2" onClick={handleModulThree}>Modul 3</Button>
+                <Container className="pb-5 text-center">
+                    <Button variant="outline-primary" className="m-2" onClick={handleModulOne}>Custom Lobby</Button>
+                    <Button variant="outline-primary" className="m-2" onClick={handleModulTwo}>Booth Configurator
+                        2</Button>
+                    <Button variant="outline-primary" className="m-2" onClick={handleModulThree}>Sponsor
+                        Section</Button>
                     <Button variant="outline-warning" onClick={handleClear} className="m-2">Clear Selection</Button>
-                    <Button variant="outline-info" onClick={window.print}>Print your Virtual Event
-                        proposal</Button>
+                    <Container className="pb-5 text-center">
+                        <Button variant="outline-info" onClick={window.print}>Print your Virtual Event
+                            proposal</Button>
 
-
+                    </Container>
                     <section>
                         <Container className="text-center">
                             <hr/>
@@ -118,10 +121,11 @@ function App() {
                                 Lorem Ipsum.</p>
                         </div>
 
-                        <Iframe className="mx-auto pb-3" url={"https://www.youtube.com/embed/7yLaYBbWwQI"} title="YouTube video player"
+                        <Iframe className="mx-auto pb-3" url={"https://www.youtube.com/embed/7yLaYBbWwQI"}
+                                title="YouTube video player"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen ></Iframe>
+                                allowfullscreen></Iframe>
 
                         <Button className="position-relative" variant="warning">
                             Module Price <Badge variant="light">{pricelist.moduleOne} Euro</Badge>
